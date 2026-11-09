@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+</script>
 <meta name="theme-color" content="#080d12">
 <meta name="description" content="CJ's Detailing and Polishing Shop in Turlock, CA. Drop-off detailing, interior and exterior details, paint correction, and more.">
 <title>CJ's Detailing and Polishing Shop | Turlock, CA</title>
@@ -130,6 +135,13 @@ footer{border-top:1px solid var(--line);padding:35px 0;background:#070b0f}.foote
 </main>
 <footer><div class="wrap"><div class="footer-row"><a class="brand" href="#home">CJ'S DETAILING<span>AND POLISHING SHOP</span></a><div class="footer-links"><a href="#services">Services</a><a href="#booking">Booking</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></div></div><div class="copyright">© <span id="year"></span> CJ's Detailing and Polishing Shop · Turlock, CA. All rights reserved.</div></div></footer>
 <script>
+// Prevent mobile browsers from restoring an old scroll position
+window.addEventListener('pageshow', function () {
+    if (!window.location.hash) {
+        window.scrollTo(0, 0);
+    }
+});
+
 const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('navlinks');
 menuBtn.addEventListener('click',()=>nav.classList.toggle('show'));
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('show')));

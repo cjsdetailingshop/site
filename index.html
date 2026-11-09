@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d12">
+<meta name="description" content="CJ's Detailing and Polishing Shop in Turlock, CA. Drop-off detailing, interior and exterior details, paint correction, and more.">
+<title>CJ's Detailing and Polishing Shop | Turlock, CA</title>
+<style>
+:root{--bg:#080d12;--panel:#101922;--panel2:#0c141c;--cyan:#20d7ee;--cyan2:#8af4ff;--white:#f4f8fb;--muted:#9aabb8;--line:rgba(138,244,255,.16);--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.eyebrow{color:var(--cyan);font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800}.section{padding:94px 0}.section-head{max-width:680px;margin-bottom:38px}.section-head h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;letter-spacing:-.045em;margin:10px 0 14px}.section-head p,.muted{color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 20px;border-radius:6px;font-weight:800;border:1px solid var(--cyan);transition:.2s;cursor:pointer}.btn-primary{background:var(--cyan);color:#031015;box-shadow:0 0 28px rgba(32,215,238,.17)}.btn-primary:hover{background:var(--cyan2);transform:translateY(-2px)}.btn-ghost{color:var(--white);background:rgba(255,255,255,.025)}.btn-ghost:hover{background:rgba(32,215,238,.1)}header{position:sticky;top:0;z-index:20;background:rgba(8,13,18,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:950;letter-spacing:-.04em;font-size:1.05rem;line-height:1.05}.brand span{display:block;color:var(--cyan);font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;margin-top:5px}.navlinks{display:flex;gap:24px;align-items:center;color:#c0cbd3;font-size:.88rem}.navlinks a:hover{color:var(--cyan)}.nav-cta{padding:10px 15px;font-size:.84rem}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:6px;padding:8px 11px}
+.hero{min-height:680px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 40%,rgba(17,176,204,.18),transparent 36%),linear-gradient(115deg,#080d12 0%,#0a141d 58%,#081017 100%)}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(90deg,black,transparent 90%)}.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(32,215,238,.17);border-radius:50%;right:4%;top:8%;box-shadow:0 0 0 42px rgba(32,215,238,.025),0 0 0 86px rgba(32,215,238,.018)}.hero-inner{position:relative;z-index:1;max-width:760px;padding:90px 0}.hero h1{font-size:clamp(3rem,7.2vw,6.4rem);line-height:.96;letter-spacing:-.07em;margin:18px 0 24px}.hero h1 em{font-style:normal;color:var(--cyan);text-shadow:0 0 32px rgba(32,215,238,.2)}.hero-copy{font-size:1.08rem;color:#b8c6d0;max-width:590px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}.hero-meta{display:flex;gap:24px;flex-wrap:wrap;color:#9eafb9;font-size:.82rem}.hero-meta b{color:white}.hero-meta span:before{content:"✦";color:var(--cyan);margin-right:8px}
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0b131a}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:22px 0}.trust-item{display:flex;align-items:center;justify-content:center;gap:12px;color:#c3d0d8;font-size:.9rem}.trust-item strong{color:var(--cyan);font-size:1.25rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service-card{padding:25px;background:linear-gradient(145deg,#111d27,#0c141c);border:1px solid var(--line);border-radius:10px;min-height:220px;position:relative;overflow:hidden}.service-card:after{content:"";position:absolute;width:110px;height:110px;border:1px solid rgba(32,215,238,.12);border-radius:50%;right:-48px;bottom:-50px}.service-card .num{color:var(--cyan);font-size:.75rem;letter-spacing:.14em;font-weight:800}.service-card h3{font-size:1.25rem;margin:13px 0 8px}.service-card p{color:var(--muted);font-size:.92rem;margin:0 0 16px}.price{font-weight:850;color:var(--cyan2);font-size:.9rem}.price small{color:var(--muted);font-weight:500}.note{font-size:.78rem;color:#8295a2;margin-top:22px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about-visual{min-height:420px;border-radius:12px;border:1px solid var(--line);background:radial-gradient(circle at 50% 45%,rgba(32,215,238,.2),transparent 36%),linear-gradient(145deg,#14232d,#091017);display:grid;place-items:center;position:relative;overflow:hidden}.about-visual:before{content:"CJ";font-size:clamp(9rem,23vw,17rem);font-weight:1000;letter-spacing:-.12em;color:rgba(32,215,238,.09);text-shadow:0 0 50px rgba(32,215,238,.1)}.about-stamp{position:absolute;bottom:24px;left:24px;border-left:3px solid var(--cyan);padding-left:14px;font-weight:800}.about-copy h2{font-size:clamp(2rem,4vw,3rem);line-height:1.05;letter-spacing:-.05em;margin:12px 0 20px}.about-copy p{color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:23px 19px;border-top:2px solid var(--cyan);background:var(--panel2)}.step .n{font-size:2rem;font-weight:900;color:rgba(32,215,238,.45)}.step h3{margin:7px 0}.step p{font-size:.9rem;color:var(--muted);margin:0}
+.booking-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:start}.booking-info{padding:30px;background:linear-gradient(145deg,#10212b,#0b131a);border:1px solid var(--line);border-radius:10px}.booking-info h3{font-size:1.6rem;line-height:1.1;margin:10px 0}.booking-info p{color:var(--muted)}.contact-line{padding:14px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;font-size:.9rem}.contact-line span{color:var(--muted)}.estimator{padding:30px;background:#0e1821;border:1px solid var(--line);border-radius:10px}.estimator h3{font-size:1.5rem;margin:0 0 5px}.field{margin:17px 0}.field label{display:block;font-size:.84rem;font-weight:750;margin-bottom:7px;color:#d9e4ea}.field select,.field input,.field textarea{width:100%;background:#080f15;color:white;border:1px solid #2a414e;border-radius:6px;padding:12px 13px;outline:none}.field select:focus,.field input:focus,.field textarea:focus{border-color:var(--cyan)}.field textarea{min-height:85px;resize:vertical}.estimate-result{margin:20px 0;padding:17px;background:rgba(32,215,238,.07);border:1px solid rgba(32,215,238,.3);border-radius:7px}.estimate-result strong{font-size:1.6rem;color:var(--cyan)}.estimate-result p{margin:2px 0 0;color:var(--muted);font-size:.8rem}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.faq-list{max-width:850px}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;display:flex;justify-content:space-between;gap:20px;text-align:left;background:none;color:white;border:0;padding:20px 0;font-weight:800;cursor:pointer}.faq-q span:last-child{color:var(--cyan);font-size:1.2rem}.faq-a{display:none;color:var(--muted);padding:0 35px 20px 0}.faq-item.open .faq-a{display:block}.faq-item.open .faq-q span:last-child{transform:rotate(45deg)}
+.cta-band{padding:42px;border:1px solid rgba(32,215,238,.3);border-radius:10px;background:radial-gradient(ellipse at 90% 50%,rgba(32,215,238,.13),transparent 40%),#0e1821;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta-band h2{font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.05;margin:7px 0}.cta-band p{color:var(--muted);margin:0}
+footer{border-top:1px solid var(--line);padding:35px 0;background:#070b0f}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap}.footer-links{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.85rem}.footer-links a:hover{color:var(--cyan)}.copyright{font-size:.78rem;color:#71818c;margin-top:22px}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#0a1219;padding:20px;width:100%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.show{display:flex}.menu{display:block}.nav-cta{display:none}.cards{grid-template-columns:repeat(2,1fr)}.about-grid,.booking-grid{grid-template-columns:1fr}.about-visual{min-height:300px}.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.wrap{width:min(100% - 30px,var(--max))}.section{padding:70px 0}.hero{min-height:620px}.hero-inner{padding:75px 0}.hero h1{font-size:clamp(3rem,15vw,4.5rem)}.trust-grid{grid-template-columns:1fr;gap:12px}.trust-item{justify-content:flex-start}.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.step{padding:17px 14px}.form-row{grid-template-columns:1fr}.estimator,.booking-info{padding:22px}.cta-band{padding:27px;align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">CJ'S DETAILING<span>AND POLISHING SHOP</span></a>
+    <nav class="navlinks" id="navlinks">
+      <a href="#services">Services</a><a href="#about">About</a><a href="#process">How It Works</a><a href="#booking">Get a Quote</a><a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="#booking">Request a Quote</a>
+    <button class="menu" id="menuBtn" aria-label="Open navigation">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap"><div class="hero-inner">
+  <div class="eyebrow">Turlock, California · By appointment</div>
+  <h1>DETAILING<br>WITH A <em>HIGHER</em><br>STANDARD.</h1>
+  <p class="hero-copy">Thoughtful, hands-on vehicle detailing focused on clean finishes, sharp presentation, and the details that make the difference. Drop off your vehicle and let the work speak for itself.</p>
+  <div class="hero-actions"><a class="btn btn-primary" href="#booking">Get Your Estimate ↗</a><a class="btn btn-ghost" href="#services">Explore Services</a></div>
+  <div class="hero-meta"><span><b>Appointment-based</b> drop-off service</span><span><b>Quality-focused</b> detailing</span><span><b>Turlock, CA</b></span></div>
+</div></div></section>
+<div class="trust"><div class="wrap trust-grid"><div class="trust-item"><strong>01</strong> Careful, hands-on work</div><div class="trust-item"><strong>02</strong> Clear quotes before work begins</div><div class="trust-item"><strong>03</strong> Convenient drop-off and pickup</div></div></div>
+
+<section class="section" id="services"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">The service menu</div><h2>THE RIGHT DETAIL<br>FOR YOUR VEHICLE.</h2><p>Choose a service to get started. Every vehicle is different, so final pricing is confirmed after discussing its size and condition.</p></div>
+  <div class="cards">
+    <article class="service-card"><div class="num">01 / INTERIOR</div><h3>Basic Interior</h3><p>Quick wipe down and vacuum. Best for lightly used or newer vehicles.</p><div class="price">Starting at $65</div></article>
+    <article class="service-card"><div class="num">02 / INTERIOR</div><h3>Deluxe Interior</h3><p>Deep cleaning with air blowout, full vacuum, plastics cleaned, and crevices detailed.</p><div class="price">Starting at $110</div></article>
+    <article class="service-card"><div class="num">03 / INTERIOR</div><h3>Platinum Interior</h3><p>Full interior reset with steam cleaning, deep vacuum, and sanitization.</p><div class="price">Starting at $220</div></article>
+    <article class="service-card"><div class="num">04 / EXTERIOR</div><h3>Standard Wash</h3><p>Foam hand wash with wheel and tire cleaning and bug removal.</p><div class="price">Starting at $55</div></article>
+    <article class="service-card"><div class="num">05 / EXTERIOR</div><h3>Wash &amp; Wax</h3><p>Full wash plus protective wax for added gloss and hydrophobic protection.</p><div class="price">Starting at $80</div></article>
+    <article class="service-card"><div class="num">06 / EXTERIOR</div><h3>Clay &amp; Seal</h3><p>Decontamination wash with clay bar and sealant for smooth protected paint.</p><div class="price">Starting at $125</div></article>
+    <article class="service-card"><div class="num">07 / PAINT CORRECTION</div><h3>1-Step Paint Correction</h3><p>Removes light swirl marks and improves gloss and clarity.</p><div class="price">Starting at $349+</div></article>
+    <article class="service-card"><div class="num">08 / PAINT CORRECTION</div><h3>2-Step Paint Correction</h3><p>Multi-stage correction for deeper scratches and maximum finish refinement.</p><div class="price">Starting at $549+</div></article>
+    <article class="service-card"><div class="num">09 / FULL PACKAGES</div><h3>Full Basic Package</h3><p>Basic interior plus exterior wash for a quick full refresh.</p><div class="price">Starting at $110</div></article>
+    <article class="service-card"><div class="num">10 / FULL PACKAGES</div><h3>Full Deluxe Package</h3><p>Deluxe interior plus wash &amp; wax for complete interior and exterior care.</p><div class="price">Starting at $180</div></article>
+    <article class="service-card"><div class="num">11 / POLISHING</div><h3>Polishing</h3><p>Have a polishing project in mind? Contact the shop to discuss your vehicle and goals.</p><div class="price">Call or text for pricing</div></article>
+  </div>
+  <div class="section-head" style="margin:38px 0 0"><div class="eyebrow">Custom work</div><p><b style="color:#edf7fa">Polishing:</b> Call or text for pricing. For paint correction and larger projects, final pricing may vary with vehicle size and paint condition.</p><p class="note">All listed prices are starting prices. Final pricing is confirmed before work begins.</p></div>
+</div></section>
+
+<section class="section" id="about" style="background:#0b1219"><div class="wrap about-grid">
+  <div class="about-visual"><div class="about-stamp">CJ'S DETAILING<br><span style="color:var(--cyan)">AND POLISHING SHOP</span></div></div>
+  <div class="about-copy"><div class="eyebrow">The person behind the work</div><h2>SMALL SHOP.<br><span style="color:var(--cyan)">SERIOUS</span> STANDARDS.</h2>
+  <p>CJ's Detailing and Polishing Shop was built around a simple idea: take pride in the work, treat every vehicle with care, and never rush through the details.</p>
+  <p>What started with detailing vehicles for people in the neighborhood has grown into an independent, appointment-based drop-off detailing business in Turlock. I focus on giving each vehicle the time and attention it deserves, whether it needs an interior reset, a clean exterior, or paint polishing.</p>
+  <p>Thanks for considering my shop. I look forward to helping you bring your vehicle back to its best.</p>
+  <a class="btn btn-ghost" href="#booking">Talk About Your Vehicle</a></div>
+</div></section>
+
+<section class="section" id="process"><div class="wrap"><div class="section-head"><div class="eyebrow">Simple from start to finish</div><h2>HOW IT WORKS.</h2><p>A straightforward drop-off process, with communication at every step.</p></div>
+<div class="steps">
+  <div class="step"><div class="n">01</div><h3>Appointment</h3><p>Send a quote request with your vehicle and the service you're interested in. We'll confirm the details and schedule.</p></div>
+  <div class="step"><div class="n">02</div><h3>Drop-Off</h3><p>Bring your vehicle to the shop at the agreed appointment time. Drop-off details are shared when your booking is confirmed.</p></div>
+  <div class="step"><div class="n">03</div><h3>Detailing</h3><p>Your selected service is completed with care. If anything changes the scope or quote, you'll be contacted first.</p></div>
+  <div class="step"><div class="n">04</div><h3>Pickup</h3><p>You'll receive a message when your vehicle is ready. Pick it up, review the results, and enjoy the refresh.</p></div>
+</div></div></section>
+
+<section class="section" id="booking" style="background:#0b1219"><div class="wrap"><div class="section-head"><div class="eyebrow">Quote & booking</div><h2>LET'S GET YOUR<br>VEHICLE DIALED IN.</h2><p>Build a quick request below. The estimator is a service selector for now; your exact quote will be confirmed after we review the vehicle and its condition.</p></div>
+<div class="booking-grid">
+  <aside class="booking-info"><div class="eyebrow">Direct contact</div><h3>Have a question before booking?</h3><p>Reach out with your vehicle details or a few photos and we'll help you choose the right service.</p>
+    <div class="contact-line"><span>Call / Text</span><a href="sms:+12097671933">209-767-1933 ↗</a></div>
+    <div class="contact-line"><span>Email</span><a href="mailto:cavj.newell@gmail.com">Send an email ↗</a></div>
+    <div class="contact-line"><span>Instagram</span><a href="https://www.instagram.com/cjs.detailing.shop.209/" target="_blank" rel="noopener">@cjs.detailing.shop.209 ↗</a></div>
+    <p class="note">At-home, appointment-based drop-off service in Turlock, CA. The exact address is provided after your appointment is confirmed.</p>
+  </aside>
+  <form class="estimator" id="quoteForm">
+    <h3>Build your quote request</h3><p class="muted" style="margin-top:0;font-size:.88rem">Choose your service and vehicle type to prepare a text message.</p>
+    <div class="form-row">
+      <div class="field"><label for="service">Service</label><select id="service" required>
+        <option value="">Select a service</option>
+        <option value="Basic Interior Detail">Basic Interior — $65</option>
+        <option value="Deluxe Interior Detail">Deluxe Interior — $110</option>
+        <option value="Platinum Interior Detail">Platinum Interior — $220</option>
+        <option value="Standard Wash">Standard Wash — $55</option>
+        <option value="Wash & Wax">Wash & Wax — $80</option>
+        <option value="Clay & Seal">Clay & Seal — $125</option>
+        <option value="1-Step Paint Correction">1-Step Paint Correction — $349+</option>
+        <option value="2-Step Paint Correction">2-Step Paint Correction — $549+</option>
+        <option value="Full Basic Package">Full Basic Package — $110</option>
+        <option value="Full Deluxe Package">Full Deluxe Package — $180</option>
+        <option value="Polishing">Polishing — Call or text</option>
+        <option value="Multiple services / Not sure">Multiple services / Not sure</option>
+      </select></div>
+      <div class="field"><label for="vehicle">Vehicle type</label><select id="vehicle" required><option value="">Select vehicle</option><option>Coupe / Sedan</option><option>Small SUV / Crossover</option><option>Full-size SUV</option><option>Truck</option><option>Van / Large vehicle</option></select></div>
+    </div>
+    <div class="form-row">
+      <div class="field"><label for="name">Your name</label><input id="name" placeholder="Name" required></div>
+      <div class="field"><label for="phone">Your phone number</label><input id="phone" type="tel" placeholder="(555) 555-5555"></div>
+    </div>
+    <div class="field"><label for="details">Vehicle details / what needs attention?</label><textarea id="details" placeholder="Year, make, model, condition, stains, paint concerns, etc."></textarea></div>
+    <div class="estimate-result"><strong id="estimatePrice">Select a service</strong><p id="estimateNote">Starting price estimate. Final pricing depends on vehicle size, condition, and selected services.</p></div>
+    <button class="btn btn-primary" type="submit" style="width:100%">Prepare Text Booking ↗</button>
+    <p class="note">This opens your messaging app with the request filled in. Your message is not sent until you press Send.</p>
+  </form>
+</div></div></section>
+
+<section class="section" id="faq"><div class="wrap"><div class="section-head"><div class="eyebrow">Good to know</div><h2>FREQUENTLY ASKED<br>QUESTIONS.</h2></div>
+<div class="faq-list">
+  <div class="faq-item"><button class="faq-q"><span>Do you offer mobile detailing?</span><span>+</span></button><div class="faq-a">No. CJ's is an at-home, appointment-based drop-off detailing shop. Customers bring their vehicle to the shop at the scheduled time.</div></div>
+  <div class="faq-item"><button class="faq-q"><span>Where is the shop located?</span><span>+</span></button><div class="faq-a">The shop is based in Turlock, California. The drop-off address is shared after your appointment is confirmed.</div></div>
+  <div class="faq-item"><button class="faq-q"><span>How long does a detail take?</span><span>+</span></button><div class="faq-a">Timing depends on the service, vehicle size, and condition. A time estimate will be provided when your appointment is scheduled.</div></div>
+  <div class="faq-item"><button class="faq-q"><span>Do you need to see the vehicle before quoting?</span><span>+</span></button><div class="faq-a">For many services, photos and vehicle details are enough to provide an initial estimate. Paint correction and heavily soiled interiors may require an in-person inspection before a final quote.</div></div>
+  <div class="faq-item"><button class="faq-q"><span>Do I need to remove personal belongings?</span><span>+</span></button><div class="faq-a">Please remove valuables and personal belongings before drop-off. This helps the detail move efficiently and keeps your items secure.</div></div>
+  <div class="faq-item"><button class="faq-q"><span>Is the online estimate a guaranteed price?</span><span>+</span></button><div class="faq-a">No. The website helps organize your request. Final pricing is confirmed with you before work begins, based on the vehicle's size, condition, and requested services.</div></div>
+</div></div></section>
+
+<section class="section" style="padding-top:0"><div class="wrap"><div class="cta-band"><div><div class="eyebrow">Your vehicle deserves the details</div><h2>READY FOR A CLEANER FINISH?</h2><p>Send a request and let's find the right service for your vehicle.</p></div><a class="btn btn-primary" href="#booking">Request a Quote ↗</a></div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-row"><a class="brand" href="#home">CJ'S DETAILING<span>AND POLISHING SHOP</span></a><div class="footer-links"><a href="#services">Services</a><a href="#booking">Booking</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></div></div><div class="copyright">© <span id="year"></span> CJ's Detailing and Polishing Shop · Turlock, CA. All rights reserved.</div></div></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('show'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('show')));
+document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>btn.parentElement.classList.toggle('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+const prices = {
+ 'Basic Interior Detail':65, 'Deluxe Interior Detail':110, 'Platinum Interior Detail':220,
+ 'Standard Wash':55, 'Wash & Wax':80, 'Clay & Seal':125,
+ '1-Step Paint Correction':349, '2-Step Paint Correction':549,
+ 'Full Basic Package':110, 'Full Deluxe Package':180
+};
+const serviceSelect=document.getElementById('service');
+const estimatePrice=document.getElementById('estimatePrice');
+const estimateNote=document.getElementById('estimateNote');
+serviceSelect.addEventListener('change',()=>{
+ const selected=serviceSelect.value;
+ if (Object.prototype.hasOwnProperty.call(prices,selected)) {
+   estimatePrice.textContent=`$${prices[selected]}${selected.includes('Correction')?'+':''}`;
+   estimateNote.textContent='Starting price only. Final quote may vary with vehicle size and condition.';
+ } else if (selected==='Polishing') {
+   estimatePrice.textContent='Call or text';
+   estimateNote.textContent='Polishing is quoted individually after discussing the vehicle and desired result.';
+ } else if (selected) {
+   estimatePrice.textContent='Custom quote';
+   estimateNote.textContent='We’ll review the services and vehicle details before confirming a price.';
+ } else {
+   estimatePrice.textContent='Select a service';
+   estimateNote.textContent='Starting price estimate. Final pricing depends on vehicle size, condition, and selected services.';
+ }
+});
+document.getElementById('quoteForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const val=id=>document.getElementById(id).value.trim();
+ const price=Object.prototype.hasOwnProperty.call(prices,val('service')) ? `$${prices[val('service')]}${val('service').includes('Correction')?'+':''} starting` : (val('service')==='Polishing'?'Call or text for pricing':'Custom quote');
+ const message=`Hi CJ's Detailing and Polishing Shop! I'd like to request a quote.\\n\\nName: ${val('name')}\\nPhone: ${val('phone')||'Not provided'}\\nVehicle type: ${val('vehicle')}\\nService: ${val('service')}\\nListed price: ${price}\\nDetails: ${val('details')||'I can provide more details.'}\\n\\nPlease let me know the final price and next available appointment.`;
+ window.location.href='sms:+12097671933?&body='+encodeURIComponent(message);
+});
+</script>
+</body></html>

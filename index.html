@@ -137,7 +137,8 @@ footer{border-top:1px solid var(--line);padding:35px 0;background:#070b0f}.foote
 <script>
 // Prevent mobile browsers from restoring an old scroll position
 window.addEventListener('pageshow', function () {
-    if (!window.location.hash) {
+    if (window.location.hash) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
         window.scrollTo(0, 0);
     }
 });
